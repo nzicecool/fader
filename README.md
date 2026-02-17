@@ -1,4 +1,4 @@
-# 🎚️ The Fader Specification (V2.0)
+# 🎚️ The Fader Specification (V1.0)
 
 **Fader** (`.fdr`) is a high-level, constraint-based prompting language designed for **Vibecoding**. 
 
