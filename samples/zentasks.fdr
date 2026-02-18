@@ -1,0 +1,37 @@
+# 🧘 Example: The "ZenTasks" App (Full-Stack)
+
+This example demonstrates how **Fader V2.0** handles both interface design and backend logic in a single file. 
+
+By using the `DATA_MIX` block, we instruct the AI to build a **fully synced, authenticated cloud application** without writing any SQL or backend boilerplate.
+
+### `zen_tasks.fdr`
+
+```yaml
+# FILE: zen_tasks.fdr
+
+METADATA:
+  App: "ZenTasks"
+  Target: Lovable / Replit
+
+PROMPT: 
+  "A calming to-do list app. Users can type a task, hit enter to add it to a list, 
+   and click a circle to check it off. Checked items should move to the bottom 
+   and gently fade out."
+
+UI_MIX:
+  - Density: 20%      # Airy. Lots of breathing room, large text, easy on the eyes.
+  - Pop: 10%          # Muted. Very subtle; maybe just a soft color change when checked.
+  - Warmth: 100%      # Cozy. Beige background, soft rounded edges, serif fonts.
+  - Strictness: 30%   # Organic. Slightly loose layout, not a rigid corporate table.
+  - Motion: 90%       # Fluid. Tasks slide in smoothly and fade out gently.
+
+DATA_MIX:
+  - Persistence: 100% # Cloud. Save to Supabase (so I can see tasks on phone & laptop).
+  - Reactivity: 100%  # Live. Real-time sync (WebSockets) across devices.
+  - Privacy: 100%     # Private. Force a Login screen; users only see their own data.
+  - Complexity: 10%   # Flat. Simple list structure; no complex folders or tags.
+
+TECH:
+  - Framework: React
+  - Style: Tailwind
+  - Backend: Supabase
