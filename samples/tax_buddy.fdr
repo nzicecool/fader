@@ -1,0 +1,38 @@
+# 💸 Example: "TaxBuddy" (Secure Financial App)
+
+This example demonstrates how **Fader V2.0** handles sensitive applications. 
+
+While the interface is designed to be friendly and approachable (High Warmth), the backend is configured for maximum security (High Privacy), ensuring that financial data is stored securely in the cloud behind an authentication wall.
+
+### `tax_buddy.fdr`
+
+```yaml
+# FILE: tax_buddy.fdr
+
+METADATA:
+  App: "TaxBuddy"
+  Target: Lovable / Claude 3.5 Sonnet
+
+PROMPT: 
+  "An income tax calculator that feels safe, not scary. 
+   Input annual salary, output monthly take-home. 
+   Show a breakdown of where the money goes (Taxes vs Medicare).
+   Allow users to save different 'scenarios' to compare later."
+
+UI_MIX:
+  - Density: 20%      # Airy. One question at a time. Don't overwhelm the user.
+  - Pop: 40%          # Muted. Use color only to highlight the 'Take Home' number.
+  - Warmth: 90%       # Cozy. Soft creams, sage greens, and rounded buttons to reduce anxiety.
+  - Strictness: 50%   # Balanced. Clean alignment for numbers, but friendly layout.
+  - Motion: 80%       # Fluid. Numbers should 'roll' up smoothly; charts animate in.
+
+DATA_MIX:
+  - Persistence: 100% # Cloud. Save user scenarios to Supabase/Firebase.
+  - Reactivity: 0%    # Static. No need for live multiplayer; fetch data only when asked.
+  - Privacy: 100%     # Private. STRICT Auth required. Users only see their own saved scenarios.
+  - Complexity: 20%   # Flat. Saving simple JSON blobs of tax data (no complex relations).
+
+TECH:
+  - Framework: React
+  - Style: Tailwind
+  - Charts: Recharts
