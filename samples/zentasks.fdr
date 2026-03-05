@@ -11,7 +11,7 @@ By using the `DATA_MIX` block, we instruct the AI to build a **fully synced, aut
 
 METADATA:
   App: "ZenTasks"
-  Target: Lovable / Replit
+  Target: Manus
 
 PROMPT: 
   "A calming to-do list app. Users can type a task, hit enter to add it to a list, 
@@ -26,7 +26,7 @@ UI_MIX:
   - Motion: 90%       # Fluid. Tasks slide in smoothly and fade out gently.
 
 DATA_MIX:
-  - Persistence: 100% # Cloud. Save to Supabase (so I can see tasks on phone & laptop).
+  - Persistence: 100% # Cloud. Save to MySQL (so I can see tasks on phone & laptop).
   - Reactivity: 100%  # Live. Real-time sync (WebSockets) across devices.
   - Privacy: 100%     # Private. Force a Login screen; users only see their own data.
   - Complexity: 10%   # Flat. Simple list structure; no complex folders or tags.
@@ -34,4 +34,4 @@ DATA_MIX:
 TECH:
   - Framework: React
   - Style: Tailwind
-  - Backend: Supabase
+  - Backend: MySQL
